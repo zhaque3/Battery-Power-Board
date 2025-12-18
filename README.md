@@ -13,22 +13,19 @@
 
 ## Overview
 
-The Battery Power Board serves as the **central power monitoring and distribution interface** between the vehicle’s energy sources and downstream subsystems.  
+The Battery Power Board serves as the central power monitoring and distribution interface between the vehicle’s energy sources and downstream subsystems.  
 It measures battery and regulated rail voltages and currents, monitors thermal conditions, computes energy usage, and communicates system status over the vehicle CAN bus.
-
-The board is designed for **low-power operation**, **high measurement reliability**, and **real-time telemetry**, enabling both driver awareness and higher-level vehicle control decisions.
-
 ---
 
 ## Key Functions
 
-- Monitor **battery input voltage and current**
-- Measure **regulated output rails** (12 V and 7 V)
-- Monitor **thermal conditions** of critical power components
-- Track **energy consumption** over time
+- Monitor battery input voltage and current
+- Measure regulated output rails (12 V and 7 V)
+- Monitor thermal conditions of critical power components
+- Track energy consumption over time
 - Display live system data on a local OLED
-- Communicate telemetry and fault states over **CAN bus**
-- Respond to **vehicle safety events** (e.g., hydrogen alarm)
+- Communicate telemetry and fault states over CAN bus
+- Respond to vehicle safety events (e.g. hydrogen alarm)
 
 ---
 
@@ -96,7 +93,7 @@ This data is used for:
   - Battery voltage and current
   - Output rail voltages and currents
   - Temperatures of key components
-- Automatically switches to an **alarm display** when a fault condition is received
+- Automatically switches to an alarm display when a fault condition is received
 
 This allows quick diagnostics during testing without external tools.
 
@@ -116,38 +113,3 @@ This allows quick diagnostics during testing without external tools.
 The board reacts immediately to safety-critical CAN messages by updating system state and user display.
 
 ---
-
-## Safety & Reliability
-
-- Continuous monitoring of electrical and thermal conditions
-- Immediate response to vehicle safety signals
-- Designed to support safe shutdown and fault awareness
-- Measurement isolation via hall-effect sensors reduces risk to control electronics
-
----
-
-## Intended Use
-
-This board is intended for:
-
-- Prototype electric or hybrid vehicles
-- Energy-efficiency competitions
-- Research platforms requiring detailed power telemetry
-- Distributed vehicle power architectures
-
----
-
-## Notes
-
-- Firmware is FreeRTOS-based and designed for deterministic operation
-- Hardware design prioritizes measurement accuracy, robustness, and low noise
-- Board functionality has been validated in vehicle testing and competition use
-
----
-
-## License
-
-This project is released under the license included in the repository.
-
----
-
