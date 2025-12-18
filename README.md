@@ -2,7 +2,7 @@
 
 **Project:** Battery Power Board — power distribution, monitoring, and telemetry board for the University of Alberta EcoCar Prototype Vehicle.
 
-**Vehicle:** 2025 Hydrogen Prototype (Sally). 1st Place, Shell Eco-Marathon Hydrogen Prototype Category  
+**Vehicle:** 2025 Hydrogen Prototype (Sally). 1st Place, Shell Eco Marathon Hydrogen Prototype Category  
 **Competition Year:** 2025
 
 <p align="center">
@@ -35,8 +35,8 @@ It measures battery and regulated rail voltages and currents, monitors thermal c
 
 ### Input
 
-- Battery input monitored via precision voltage divider
-- Hall-effect current sensing for non-intrusive measurement
+- Battery input monitored via voltage divider
+- Hall effect current sensing
 - Designed for continuous monitoring under dynamic load conditions
 
 ### Output Rails
@@ -46,7 +46,7 @@ It measures battery and regulated rail voltages and currents, monitors thermal c
   - Supplies downstream electronics and subsystems
 - **7 V Rail**
   - Voltage and current monitored
-  - Intended for low-power or auxiliary loads
+  - Intended for low power or auxiliary loads
 
 ---
 
@@ -63,7 +63,7 @@ The board continuously measures:
 - 7 V output voltage
 - 7 V output current
 
-These measurements allow real-time estimation of power flow and system loading.
+These measurements allow real time estimation of power flow and system loading.
 
 ### Thermal Monitoring
 
@@ -81,7 +81,7 @@ The board integrates measured voltage and current over time to estimate energy u
 This data is used for:
 
 - Efficiency analysis
-- Post-run performance evaluation
+- Post run performance evaluation
 - Competition strategy optimization
 
 ---
@@ -101,7 +101,7 @@ This allows quick diagnostics during testing without external tools.
 
 ## CAN Bus Integration
 
-- Fully integrated into the vehicle **CAN network**
+- Fully integrated into the vehicle CAN network
 - Transmits:
   - Electrical measurements
   - Thermal data
@@ -110,6 +110,6 @@ This allows quick diagnostics during testing without external tools.
   - Safety and fault signals (e.g., hydrogen alarm)
   - Synchronization or status commands from other vehicle modules
 
-The board reacts immediately to safety-critical CAN messages by updating system state and user display.
+The board reacts immediately to safety critical CAN messages by updating system state and user display.
 
 ---
