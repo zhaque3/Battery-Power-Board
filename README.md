@@ -2,7 +2,7 @@
 
 **Project:** Battery Power Board — power distribution, monitoring, and telemetry board for the University of Alberta EcoCar Prototype Vehicle.
 
-**Vehicle:** Sally — 1st Place, Shell Eco-Marathon Hydrogen Prototype Category  
+**Vehicle:** 2025 Hydrogen Prototype (Sally). 1st Place, Shell Eco-Marathon Hydrogen Prototype Category  
 **Competition Year:** 2025
 
 <p align="center">
@@ -14,6 +14,7 @@
 ## Overview
 
 The Battery Power Board serves as the central power monitoring and distribution interface between the vehicle’s energy sources and downstream subsystems.  
+
 It measures battery and regulated rail voltages and currents, monitors thermal conditions, computes energy usage, and communicates system status over the vehicle CAN bus.
 
 ---
@@ -47,8 +48,6 @@ It measures battery and regulated rail voltages and currents, monitors thermal c
   - Voltage and current monitored
   - Intended for low-power or auxiliary loads
 
-Each rail is independently sensed to allow detailed power budgeting and diagnostics.
-
 ---
 
 ## Sensing & Measurement
@@ -78,7 +77,7 @@ These measurements allow real-time estimation of power flow and system loading.
 
 ## Energy Tracking
 
-The board integrates measured voltage and current over time to estimate **energy usage (joules)**.  
+The board integrates measured voltage and current over time to estimate energy usage (joules).  
 This data is used for:
 
 - Efficiency analysis
